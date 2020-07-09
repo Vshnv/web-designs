@@ -138,6 +138,15 @@ div.navbar-brand {
     color: rgb(50, 50, 100);
 }
 
+#carousel-jumbo {
+    padding: 0;
+}
+
+#carousel-jumbo .carousel {
+    max-height: 2000px;
+}
+
+
 @media(min-width: 1200px) { 
     nav #logo-img {
         height: 200px;
