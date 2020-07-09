@@ -1,0 +1,246 @@
+/****General + Xs****/
+body {
+    font-family: 'Orbitron', sans-serif;
+    
+}
+
+nav {
+   font-family: 'Orbitron', sans-serif;
+}
+
+
+#logo-img {
+    background: url("../images/logo.png") no-repeat;
+    margin: 10px 15px 10px 0;
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    display: none;
+}
+
+#header-nav {
+    background-color: white;
+    border-radius: 0;
+    border: 0;
+}
+
+div.navbar-brand {
+    margin-top: 50px;
+}
+
+.carousel {
+  max-height: 700px;
+  overflow: hidden;
+}
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+.styled-border {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.styled-border::before {
+    content: " ";
+    display: none;
+    height: 100px;
+    width: 100px;
+    border: double rgb(88, 104, 209) 10px;
+    border-bottom: 0px;
+    border-right: 0px;
+    top: -25px;
+    left: -10px;
+    position: absolute;
+    
+}
+
+.styled-border::after {
+    content: " ";
+    display: none;
+    height: 100px;
+    width: 100px;
+    border: double rgb(88, 104, 209) 10px;
+    border-left: 0px;
+    border-top: 0px;
+    position: absolute;
+    
+    bottom: -25px;
+    right: -10px;
+}
+
+.styled-line {
+    position: relative;
+}
+.styled-line::before {
+    content: " ";
+    display: none;
+    background-color: rgb(88, 104, 209);
+    height: 10px;
+    width: 20%;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+}
+.styled-line::after {
+    content: " ";
+    display: none;
+    background-color: rgb(88, 104, 209);
+    height: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+}
+
+#about-us {
+    padding: 50px
+}
+
+#videos-on-demand {
+    overflow: auto;
+    white-space: nowrap;
+    background-color: rgba(88, 104, 209, 0.5);
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+#videos-on-demand::-webkit-scrollbar {
+    background-color: rgba(88, 104, 209, 0.25);
+    border-radius: 10px;
+}
+
+#videos-on-demand::-webkit-scrollbar-thumb {
+    background-color: rgb(88, 104, 209);
+    border-radius: 10px;
+}
+.card {
+    height: 400px;
+    width: 300px;
+    background-color: rgba(150, 150, 150, 0.25);
+    display: inline-block;
+}
+
+#contact-info div {
+    height: 200px;
+}
+
+#contact-footer {
+    margin-bottom: 0;
+}
+.navbar-brand a , .navbar-brand a:hover , .navbar-brand a:focus {
+    text-decoration: none;
+}
+
+.contact-title {
+    font-size: 1.5em;
+    color: rgb(50, 50, 100);
+}
+
+@media(min-width: 1200px) { 
+    nav #logo-img {
+        height: 200px;
+        width: 200px;
+        background-repeat: no-repeat;
+        background-size: 200px;
+        display: block;
+        top: -100px;
+    }
+    .styled-line::before , .styled-line::after {
+        display: block;
+        width: 30%;
+    }
+    .styled-border::before , .styled-border::after {
+        display: block;
+    }
+}
+
+@media(min-width: 992px) and (max-width: 1199px) { 
+    nav #logo-img {
+        height: 200px;
+        width: 200px;
+        background-repeat: no-repeat;
+        background-size: 200px;
+        display: block;
+    }
+    .styled-line::before , .styled-line::after {
+        display: block;
+        width: 30%;
+    }
+    .styled-border::before , .styled-border::after {
+        display: block;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px) { 
+    nav #logo-img {
+        height: 150px;
+        width: 150px;
+        background-repeat: no-repeat;
+        background-size: 150px;
+        display: block;
+    }
+    .styled-line::before , .styled-line::after {
+        display: block;
+        width: 20%;
+    }
+    .styled-border::before , .styled-border::after {
+        display: block;
+    }
+}
+
+
+@media(min-width: 576px) and (max-width: 767px) { 
+    nav #logo-img {
+        height: 100px;
+        width: 100px;
+        background-repeat: no-repeat;
+        background-size: 100px;
+        display: block;
+    }
+    #brand-title {
+        margin-top: 25px;
+        font-size: 1.5em;
+    }
+    
+    #header-nav h1 {
+        font-size: 1.5em;
+        margin-bottom: 0px;
+    }
+    #header-nav p {
+        font-size: 0.75em;
+        
+    }
+    .styled-border::before , .styled-border::after {
+        display: block;
+    }
+}
+
+@media(min-width: 0px) and (max-width: 575px) { 
+    nav #logo-img {
+        height: 75px;
+        width: 75px;
+        background-repeat: no-repeat;
+        background-size: 75px;
+        display: block;
+    }
+    #brand-title {
+        margin-top: 30px;
+        margin-left: 0px;
+        font-size: 0.70em;
+    }
+    
+    #header-nav h1 {
+        font-size: 1.5em;
+        margin-bottom: 0px;
+    }
+    #header-nav p {
+        font-size: 0.75em;
+        
+    }
+    #about-us {
+        font-size: 0.75em;
+    }
+}
+
+
