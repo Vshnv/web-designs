@@ -98,20 +98,20 @@ div.navbar-brand {
     padding: 50px
 }
 
-#videos-on-demand {
+#videos-on-demand , #gallery {
     overflow: auto;
     white-space: nowrap;
     background-color: rgba(200, 200, 200, 0.5);
     border-radius: 10px;
     margin-bottom: 100px;
 }
-#videos-on-demand::-webkit-scrollbar {
+#videos-on-demand::-webkit-scrollbar , #gallery::-webkit-scrollbar {
     background-color: rgba(255, 255, 255, 1);
     border-radius: 10px;
     border: double black 1px;
 }
 
-#videos-on-demand::-webkit-scrollbar-thumb {
+#videos-on-demand::-webkit-scrollbar-thumb , #gallery::-webkit-scrollbar-thumb {
     background-color: rgb(25, 25, 25);
     border-radius: 10px;
 }
